@@ -189,8 +189,9 @@
   max-width: 1500px;
   position: relative;
   margin: auto;
-  top: 100px;
+  top: 135px;
   display: flex;
+  
 }
 
 .container .game a.button {
@@ -201,8 +202,63 @@
   border-style: groove;
   text-decoration: none;
   background-color: ivory;
-  font-size: 20px;
+  font-size: 50px;
   color: #bb4444;
   border-radius: 20px;
   padding: 10px;
+}
+.container .game p{
+  font-size: 20px;
+  margin-left: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.contact{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  top: 150px;
+  background-color: rgb(236, 236, 230);
+  border-radius: 10px 10px 0 0;
+}
+.contact h1{
+  text-align: center;
+  font-size: 40px;
+  color: #241007;
+}
+.contact h1:hover {
+  transform: scale(1.5);
+  color: #e30909;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.contact ul{
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}.contact ul li a{
+  display: flex;
+  margin-left: 150px;
+}
+.icon1{
+  height: 50px;
+  margin-left: 30px;
+  background-image: none !important;
+}
+.contact .icon1:hover {
+  transform: scale(1.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.icon p{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+#text-contact{
+  background-color: #eba5a5;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2c1104;
+  border-radius: 90px 90px 0 0;
 }
