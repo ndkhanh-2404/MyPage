@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.header{
+    
+    position: absolute;
+    z-index: 999;
+}
+
+.snav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s ease-in;
+    z-index: 999;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(41, 41, 46);
+    height: auto;
+    border-radius: 0 0 20px 20px;
+}
+.header .snav .logo{
+  margin: 15px 40px;
+  width: 132px;
+  left: 0;
+}
+.snav .navigation {
+    position: absolute;
+    top: 0;
+    width: 660px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px;
+    padding: 1.25rem 2.5rem;
+    left: 633px;
+}
+
+.snav .navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.snav .navigation ul li a {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    display: block;
+}
+
+.snav .navigation ul li a:hover {
+    transform: scale(1.5);
+    color: #e30909;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.snav .navigation.scroll {
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.snav .navigation.scroll a {
+    color: #636e72;
+}
+
+/* Slideshow container */
+.container .back {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation-name: backdiv;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes backdiv {
+  50% {
+    background: #ffe6f2;
+  }
+}
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+}
+.slideshow-container #love {
+  text-align: center;
+  font-size: 50px;
+
+}
+.slideshow-container h2:hover {
+    transform: scale(1.5);
+    color: #9c3709;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+    position: relative;
+    z-index: 1;
+    top:20px;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #eba5a5;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 900px;
+  width: 100%;
+  text-align: center;
+}
+.mySlides img{
+  border-radius: 20px;
+}
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.container .about{
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+  display: flex;
+}
+.container .about .avatar{
+  border-radius: 30px;
+  margin-right: 70px;
+}
+
+.container .about .info{
+  text-align: left;
+  margin-top: 20px;
+  font-family: 'Times New Roman', sans-serif;
+}
+.container .about .info h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.container .about .info p{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.container .game{
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+  display: flex;
+}
+
+.container .game a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width: auto;
+  border-style: groove;
+  text-decoration: none;
+  background-color: ivory;
+  font-size: 20px;
+  color: #bb4444;
+  border-radius: 20px;
+  padding: 10px;
+}
